@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacie KAZI TANI (SAC) · Abou Tachfine, Tlemcen · 2 Étages Santé & Parapharmacie</title>
+  <meta name="description" content="Pharmacie KAZI TANI SID AHMED CHAKIB (SAC) à Abou Tachfine (Bréa), Tlemcen. 2 étages dédiés à votre santé : ordonnances CHIFA, parapharmacie, matériel médical et maintien à domicile. Ouvert 7j/7 jusqu'à minuit.">
+  <meta name="keywords" content="Pharmacie Tlemcen, Pharmacie Kazi Tani, Pharmacie Abou Tachfine, Chifa Tlemcen, Parapharmacie Tlemcen, Matériel médical Tlemcen, Pharmacie de garde Tlemcen">
+  <link rel="canonical" href="https://pharmacie-kazi-tani.dz/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pharmacie-kazi-tani.dz/">
+  <meta property="og:title" content="Pharmacie KAZI TANI (SAC) · Tlemcen · Deux Étages Dédiés à Votre Santé">
+  <meta property="og:description" content="Officine de référence à Abou Tachfine, en face de la BNA. Conventionné CHIFA, dermo-cosmétique, orthopédie et maintien à domicile. 7j/7 de 8h30 à minuit.">
+  <meta property="og:locale" content="fr_DZ">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pharmacie KAZI TANI (SAC) · Tlemcen">
+  <meta name="twitter:description" content="2 étages de santé, dermo-cosmétique et matériel médical à Tlemcen. Ouvert jusqu'à minuit.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       TOKENS & THEME VARIABLES
+       ========================================================================== */
+    :root {
+      --color-primary: #0F766E;
+      --color-primary-dark: #115E59;
+      --color-primary-light: #14B8A6;
+      --color-primary-subtle: #CCFBF1;
+      --color-primary-glow: rgba(15, 118, 110, 0.15);
+
+      --color-secondary: #0284C7;
+      --color-secondary-subtle: #E0F2FE;
+
+      --color-accent: #10B981;
+      --color-accent-subtle: #D1FAE5;
+      --color-accent-glow: rgba(16, 185, 129, 0.25);
+
+      --color-surface: #F8FAFC;
+      --color-surface-card: #FFFFFF;
+      --color-surface-elevated: #FFFFFF;
+      --color-surface-muted: #F1F5F9;
+
+      --color-border: #E2E8F0;
+      --color-border-subtle: #EDF2F7;
+      --color-border-focus: #0F766E;
+
+      --color-text: #0F172A;
+      --color-text-muted: #475569;
+      --color-text-subtle: #64748B;
+      --color-text-inverse: #FFFFFF;
+
+      --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-arabic: 'Noto Kufi Arabic', system-ui, sans-serif;
+
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-xl: 24px;
+      --radius-pill: 9999px;
+
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 4px 14px -2px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 12px 28px -4px rgba(15, 23, 42, 0.1);
+      --shadow-glow: 0 0 30px var(--color-primary-glow);
+
+      --space-xs: 0.5rem;
+      --space-sm: 1rem;
+      --space-md: 1.5rem;
+      --space-lg: 2.25rem;
+      --space-xl: 3.5rem;
+      --space-2xl: 5rem;
+
+      --container-max: 1200px;
+      --transition-base: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* ==========================================================================
+       BASE & RESET
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      color-scheme: light;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-surface);
+      color: var(--color-text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color var(--transition-base);
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: var(--space-md);
+      padding-right: var(--space-md);
+    }
+
+    /* ==========================================================================
+       TYPOGRAPHY & UTILITIES
+       ========================================================================== */
+    .font-arabic {
+      font-family: var(--font-arabic);
+    }
+
+    .section {
+      padding-top: var(--space-2xl);
+      padding-bottom: var(--space-2xl);
+      position: relative;
+    }
+
+    .section--muted {
+      background-color: var(--color-surface-muted);
+    }
+
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.85rem;
+      background: var(--color-primary-subtle);
+      color: var(--color-primary-dark);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      border-radius: var(--radius-pill);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--space-sm);
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.85rem, 4vw, 2.75rem);
+      font-weight: 800;
+      color: var(--color-text);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--space-xs);
+    }
+
+    .section-subtitle {
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      color: var(--color-text-muted);
+      max-width: 650px;
+      line-height: 1.6;
+    }
+
+    .section-header--center {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+    }
+    .section-header--center .section-subtitle {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ==========================================================================
+       BUTTONS
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 0.75rem 1.4rem;
+      font-family: var(--font-display);
+      font-size: 0.9375rem;
+      font-weight: 700;
+      border-radius: var(--radius-pill);
+      transition: all var(--transition-base);
+      white-space: nowrap;
+    }
+
+    .btn--primary {
+      background-color: var(--color-primary);
+      color: var(--color-text-inverse);
+      box-shadow: 0 4px 14px rgba(15, 118, 110, 0.3);
+    }
+    .btn--primary:hover {
+      background-color: var(--color-primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(15, 118, 110, 0.4);
+    }
+
+    .btn--secondary {
+      background-color: var(--color-surface-card);
+      color: var(--color-primary-dark);
+      border: 1.5px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+    }
+    .btn--secondary:hover {
+      border-color: var(--color-primary);
+      background-color: var(--color-primary-subtle);
+      transform: translateY(-2px);
+    }
+
+    .btn--whatsapp {
+      background-color: #25D366;
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    }
+    .btn--whatsapp:hover {
+      background-color: #1EBE5D;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    }
+
+    .btn--lg {
+      padding: 0.95rem 1.85rem;
+      font-size: 1.05rem;
+    }
+
+    .btn--sm {
+      padding: 0.5rem 1rem;
+      font-size: 0.8125rem;
+    }
+
+    /* ==========================================================================
+       TOP ANNOUNCEMENT BAR
+       ========================================================================== */
+    .topbar {
+      background: linear-gradient(90deg, #115E59, #0F766E, #0284C7);
+      color: #FFFFFF;
+      padding: 0.5rem var(--space-md);
+      font-size: 0.8125rem;
+      font-weight: 600;
+    }
+    .topbar__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .topbar__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.15rem 0.55rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== */
+    .header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      height: 76px;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+      z-index: 100;
+      transition: background 0.3s ease;
+    }
+    .header__inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .brand__emblem {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.15rem;
+      box-shadow: 0 4px 10px rgba(15, 118, 110, 0.25);
+    }
+    .brand__title {
+      font-family: var(--font-display);
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: var(--color-text);
+      line-height: 1.2;
+    }
+    .brand__arabic {
+      font-family: var(--font-arabic);
+      font-size: 0.75rem;
+      color: var(--color-primary);
+      line-height: 1;
+    }
+
+    .nav {
+      display: none;
+      align-items: center;
+      gap: 1.75rem;
+    }
+    @media (min-width: 992px) {
+      .nav { display: flex; }
+    }
+    .nav__link {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      position: relative;
+    }
+    .nav__link:hover {
+      color: var(--color-primary);
+    }
+
+    .header__actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      background: var(--color-accent-subtle);
+      color: #065F46;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    .status-pill__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10B981;
+      animation: pulseDot 2s infinite;
+    }
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero {
+      position: relative;
+      padding-top: clamp(2.5rem, 5vw, 4.5rem);
+      padding-bottom: clamp(3rem, 6vw, 5.5rem);
+      background: radial-gradient(circle at 85% 15%, rgba(2, 132, 199, 0.08) 0%, transparent 45%),
+                  radial-gradient(circle at 15% 50%, rgba(15, 118, 110, 0.06) 0%, transparent 40%),
+                  var(--color-surface);
+      overflow: hidden;
+    }
+
+    .hero__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+      align-items: center;
+    }
+    @media (min-width: 992px) {
+      .hero__grid {
+        grid-template-columns: 1.15fr 0.85fr;
+      }
+    }
+
+    .hero__content {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .hero__headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      color: var(--color-text);
+    }
+    .hero__headline span {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero__lead {
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      color: var(--color-text-muted);
+      max-width: 580px;
+      line-height: 1.65;
+    }
+
+    .hero__ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      padding-top: var(--space-xs);
+    }
+
+    .hero__trust {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.5rem;
+      padding-top: var(--space-md);
+      border-top: 1px solid var(--color-border);
+    }
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-text-subtle);
+    }
+
+    /* Hero Visual Card: The 2-Floor Medical Center Showcase */
+    .hero-stage {
+      position: relative;
+      background: var(--color-surface-card);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-lg), var(--shadow-glow);
+      padding: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .stage-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .floor-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.75rem;
+      font-weight: 800;
+      background: var(--color-primary);
+      color: #FFFFFF;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .floor-display {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-sm);
+    }
+
+    .floor-box {
+      border: 1.5px solid var(--color-border-subtle);
+      border-radius: var(--radius-md);
+      padding: var(--space-sm);
+      background: var(--color-surface);
+      display: flex;
+      gap: var(--space-sm);
+      align-items: center;
+      transition: all var(--transition-base);
+    }
+    .floor-box:hover {
+      border-color: var(--color-primary);
+      background: #FFFFFF;
+      transform: translateX(4px);
+    }
+
+    .floor-box__icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--color-primary-subtle);
+      color: var(--color-primary-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .floor-box__title {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.9375rem;
+      color: var(--color-text);
+      line-height: 1.25;
+    }
+    .floor-box__desc {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      line-height: 1.4;
+    }
+
+    /* Floating quick service card */
+    .hero-prescription-cta {
+      background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(2, 132, 199, 0.08));
+      border: 1px dashed var(--color-primary);
+      border-radius: var(--radius-md);
+      padding: var(--space-sm);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-sm);
+    }
+    .hero-prescription-cta__text {
+      font-size: 0.8125rem;
+      color: var(--color-primary-dark);
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       TRUST STRIP & KEY HIGHLIGHTS
+       ========================================================================== */
+    .trust-strip {
+      background: var(--color-surface-card);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      padding: var(--space-lg) 0;
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-md);
+    }
+    @media (min-width: 768px) {
+      .trust-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .trust-card {
+      text-align: center;
+      padding: var(--space-sm);
+    }
+    .trust-card__num {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 3vw, 2.35rem);
+      font-weight: 800;
+      color: var(--color-primary);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+    .trust-card__title {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 0.15rem;
+    }
+    .trust-card__desc {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ==========================================================================
+       SIGNATURE INTERACTIVE: L'EXPLORATEUR 2 ÉTAGES
+       ========================================================================== */
+    .interactive-facility {
+      background: var(--color-surface-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-xl) var(--space-lg);
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .floor-tabs {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-xs);
+      background: var(--color-surface-muted);
+      padding: 0.35rem;
+      border-radius: var(--radius-pill);
+      max-width: 440px;
+      margin: 0 auto var(--space-xl) auto;
+    }
+
+    .floor-tab-btn {
+      flex: 1;
+      padding: 0.65rem 1.25rem;
+      font-size: 0.9375rem;
+      font-weight: 700;
+      border-radius: var(--radius-pill);
+      color: var(--color-text-muted);
+      transition: all var(--transition-base);
+    }
+    .floor-tab-btn.is-active {
+      background: var(--color-primary);
+      color: #FFFFFF;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .facility-panel {
+      display: none;
+      animation: fadeIn 0.4s ease;
+    }
+    .facility-panel.is-active {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+    @media (min-width: 900px) {
+      .facility-panel.is-active {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .facility-info-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .facility-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+      margin: var(--space-md) 0;
+    }
+    .facility-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.9375rem;
+      color: var(--color-text);
+    }
+    .facility-item svg {
+      color: var(--color-primary);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* ==========================================================================
+       SERVICES & PARAPHARMACIE (OFFERINGS)
+       ========================================================================== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+    }
+    @media (min-width: 640px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .service-card {
+      background: var(--color-surface-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: var(--space-md);
+      transition: all var(--transition-base);
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+    .service-card:hover {
+      border-color: var(--color-primary);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .service-card__badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 0.6875rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-pill);
+      background: var(--color-primary-subtle);
+      color: var(--color-primary-dark);
+    }
+
+    .service-card__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      background: var(--color-primary-subtle);
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .service-card__title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--color-text);
+      margin-bottom: 0.25rem;
+    }
+    .service-card__desc {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      line-height: 1.55;
+    }
+    .service-card__footer {
+      padding-top: var(--space-sm);
+      border-top: 1px dashed var(--color-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+    }
+
+    /* ==========================================================================
+       ORDONNANCE & CHIFA FAST-TRACK (ACTION SECTION)
+       ========================================================================== */
+    .chifa-box {
+      background: linear-gradient(135deg, #0F766E 0%, #115E59 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-xl);
+      padding: clamp(2rem, 5vw, 3.5rem);
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+    .chifa-box__glow {
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(20, 184, 166, 0.3) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .chifa-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+      position: relative;
+      z-index: 2;
+    }
+    @media (min-width: 900px) {
+      .chifa-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: center;
+      }
+    }
+
+    .chifa-step {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-sm);
+    }
+    .chifa-step__num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.875rem;
+      flex-shrink: 0;
+    }
+    .chifa-step__text {
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* ==========================================================================
+       PRACTICAL INFO & SCHEDULE
+       ========================================================================== */
+    .practical-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+    @media (min-width: 992px) {
+      .practical-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .info-card {
+      background: var(--color-surface-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      display: flex;
+      gap: var(--space-md);
+      align-items: flex-start;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: var(--space-md);
+    }
+    .info-card__icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--color-primary-subtle);
+      color: var(--color-primary-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .info-card__title {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--color-text);
+      margin-bottom: 0.25rem;
+    }
+    .info-card__val {
+      font-size: 1rem;
+      color: var(--color-text);
+      font-weight: 600;
+    }
+    .info-card__sub {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+      margin-top: 0.15rem;
+    }
+
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: var(--space-sm);
+      font-size: 0.875rem;
+    }
+    .hours-table tr {
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+    .hours-table td {
+      padding: 0.45rem 0;
+      color: var(--color-text-muted);
+    }
+    .hours-table td:last-child {
+      text-align: right;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+    .hours-table tr.is-today {
+      color: var(--color-primary-dark);
+      font-weight: 800;
+    }
+    .hours-table tr.is-today td {
+      color: var(--color-primary-dark);
+    }
+
+    .map-frame {
+      width: 100%;
+      min-height: 380px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      background: var(--color-surface-muted);
+    }
+
+    /* ==========================================================================
+       PRESCRIPTION UPLOAD MODAL / FORM
+       ========================================================================== */
+    .order-form-card {
+      background: var(--color-surface-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: clamp(1.5rem, 4vw, 2.5rem);
+      box-shadow: var(--shadow-md);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: var(--space-sm);
+    }
+    .form-label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 0.35rem;
+    }
+    .form-input, .form-textarea, .form-select {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-md);
+      font-family: inherit;
+      font-size: 0.9375rem;
+      background: var(--color-surface);
+      color: var(--color-text);
+      transition: all var(--transition-base);
+    }
+    .form-input:focus, .form-textarea:focus, .form-select:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      background: #FFFFFF;
+      box-shadow: 0 0 0 3px var(--color-primary-glow);
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .footer {
+      background: #0B131E;
+      color: #94A3B8;
+      padding-top: var(--space-2xl);
+      padding-bottom: 5rem;
+      border-top: 1px solid #1E293B;
+      font-size: 0.875rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+    }
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr;
+      }
+    }
+    .footer-title {
+      color: #F8FAFC;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: var(--space-sm);
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .footer-links a:hover {
+      color: #FFFFFF;
+    }
+
+    /* ==========================================================================
+       MOBILE ACTION BAR (STICKY)
+       ========================================================================== */
+    .mobile-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid var(--color-border);
+      padding: 0.65rem var(--space-md);
+      display: flex;
+      gap: 0.75rem;
+      z-index: 99;
+      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.06);
+    }
+    @media (min-width: 768px) {
+      .mobile-bar { display: none; }
+    }
+    .mobile-bar .btn {
+      flex: 1;
+    }
+
+    /* Micro-interactions & animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ==========================================================================
+       VIDEO TOUR & SOCIAL MEDIA SHOWCASE
+       ========================================================================== */
+    .video-showcase-card {
+      position: relative;
+      background: #0B131E;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid #1E293B;
+      box-shadow: var(--shadow-lg);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .video-thumbnail-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #0F172A;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .video-bg-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.75;
+      transition: transform 0.6s ease;
+    }
+    .video-showcase-card:hover .video-bg-img {
+      transform: scale(1.03);
+    }
+    .video-overlay-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(11, 19, 30, 0.95) 0%, rgba(11, 19, 30, 0.3) 50%, rgba(11, 19, 30, 0.6) 100%);
+    }
+    .video-play-btn {
+      position: relative;
+      z-index: 10;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 35px rgba(15, 118, 110, 0.6);
+      transition: all var(--transition-base);
+    }
+    .video-play-btn:hover {
+      transform: scale(1.1);
+      background: var(--color-primary-light);
+      box-shadow: 0 0 45px rgba(20, 184, 166, 0.8);
+    }
+    .video-info-bar {
+      padding: var(--space-lg);
+      color: #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      background: #0B131E;
+    }
+
+    /* Social Posts Grid (Instagram & Facebook) */
+    .social-feed-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+    }
+    @media (min-width: 640px) {
+      .social-feed-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .social-feed-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .social-post-card {
+      background: var(--color-surface-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-base);
+    }
+    .social-post-card:hover {
+      border-color: var(--color-primary);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .social-post-img-wrap {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      position: relative;
+      background: var(--color-surface-muted);
+    }
+    .social-post-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .social-post-card:hover .social-post-img {
+      transform: scale(1.05);
+    }
+    .social-network-badge {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .badge--insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+    .badge--fb { background: #1877F2; }
+
+    .social-post-content {
+      padding: var(--space-md);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .social-post-caption {
+      font-size: 0.875rem;
+      color: var(--color-text);
+      line-height: 1.5;
+    }
+    .social-post-tags {
+      font-size: 0.75rem;
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+    .social-post-footer {
+      padding: var(--space-sm) var(--space-md);
+      border-top: 1px solid var(--color-border-subtle);
+      background: var(--color-surface);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="topbar" aria-label="Informations urgentes">
+    <div class="container topbar__inner">
+      <div style="display: flex; align-items: center; gap: 0.6rem;">
+        <span class="topbar__badge">Officine Ouverte</span>
+        <span>Ouvert 7j/7 de 8h30 à Minuit · Prise en charge immédiate carte CHIFA</span>
+      </div>
+      <div>
+        <a href="tel:+21343228643" style="color: #FFFFFF; font-weight: 700;">Urgence & Appel : 043 22 86 43</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="header" id="header" data-section="header">
+    <div class="container header__inner">
+      <a href="#hero" class="brand" aria-label="Accueil Pharmacie KAZI TANI">
+        <div class="brand__emblem">SAC</div>
+        <div>
+          <div class="brand__title" data-bind="business.name"></div>
+          <div class="brand__arabic" data-bind="business.nameArabic"></div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#batiment" class="nav__link">Le Bâtiment Santé</a>
+        <a href="#services" class="nav__link">Départements</a>
+        <a href="#video" class="nav__link">Visite Vidéo</a>
+        <a href="#reseaux" class="nav__link">Photos Réseaux</a>
+        <a href="#chifa" class="nav__link">Ordonnance CHIFA</a>
+        <a href="#infos" class="nav__link">Accès & Horaires</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="status-pill" id="live-status-pill">
+          <span class="status-pill__dot"></span>
+          <span id="live-status-text">Ouvert jusqu'à 00:00</span>
+        </div>
+
+        <a href="https://wa.me/21343228643" class="btn btn--whatsapp btn--sm" data-bind-href="business.whatsappUrl" target="_blank" rel="noopener">
+          <span>WhatsApp Ordonnance</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero" data-section="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="section-badge" data-bind="content.hero.badge"></div>
+          <h1 class="hero__headline" data-bind="content.hero.headline"></h1>
+          <p class="hero__lead" data-bind="content.hero.lead"></p>
+
+          <div class="hero__ctas">
+            <a href="#ordonnance" class="btn btn--primary btn--lg" data-bind="content.hero.ctaPrimary"></a>
+            <a href="tel:+21343228643" class="btn btn--secondary btn--lg" data-bind-href="business.phoneHref">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span data-bind="business.phone"></span>
+            </a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="trust-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#0F766E"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4" stroke="#fff" stroke-width="2"/></svg>
+              <span>Conventionné Carte CHIFA</span>
+            </div>
+            <div class="trust-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#0F766E"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4" stroke="#fff" stroke-width="2"/></svg>
+              <span>Service continu 7j/7</span>
+            </div>
+            <div class="trust-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#0F766E"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4" stroke="#fff" stroke-width="2"/></svg>
+              <span>Abou Tachfine · Face BNA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2-Floor Showcase Interactive Device -->
+        <div class="hero-stage reveal">
+          <div class="stage-card-header">
+            <span class="floor-pill">Pôle Médical Pluridisciplinaire</span>
+            <span style="font-size: 0.8125rem; font-weight: 700; color: var(--color-primary-dark);">Tlemcen 13000</span>
+          </div>
+
+          <div class="floor-display">
+            <!-- Floor 1 -->
+            <div class="floor-box">
+              <div class="floor-box__icon">1er</div>
+              <div>
+                <h2 class="floor-box__title">Étage 1 · Cabinets Médicaux & Laboratoire</h2>
+                <p class="floor-box__desc">Consultations spécialistes & laboratoire d'analyses médicales sur place.</p>
+              </div>
+            </div>
+
+            <!-- Ground Floor -->
+            <div class="floor-box" style="border-color: var(--color-primary); background: rgba(15,118,110,0.03);">
+              <div class="floor-box__icon" style="background: var(--color-primary); color: #fff;">RDC</div>
+              <div>
+                <h2 class="floor-box__title">RDC · Grande Pharmacie & Dermo-Cosmétique</h2>
+                <p class="floor-box__desc">Guichets CHIFA, parapharmacie Nutraxin, espace maman-bébé & fauteuils roulants.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-prescription-cta">
+            <div style="display:flex; align-items:center; gap:0.6rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+              <div class="hero-prescription-cta__text">Votre ordonnance prête avant votre arrivée</div>
+            </div>
+            <a href="https://wa.me/21343228643" class="btn btn--whatsapp btn--sm" data-bind-href="business.whatsappUrl" target="_blank" rel="noopener">Envoyer photo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TRUST STRIP ==================== -->
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-card">
+          <div class="trust-card__num">2</div>
+          <div class="trust-card__title">Étages Dédiés</div>
+          <div class="trust-card__desc">Tout au même endroit</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card__num">00:00</div>
+          <div class="trust-card__title">Minuit Tous les Jours</div>
+          <div class="trust-card__desc">Ouvert 7 jours sur 7</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card__num">100%</div>
+          <div class="trust-card__title">Carte CHIFA</div>
+          <div class="trust-card__desc">Tiers-payant CNAS / CASNOS</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card__num">3</div>
+          <div class="trust-card__title">Pôles Réunis</div>
+          <div class="trust-card__desc">Pharmacie · Labo · Médecins</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SIGNATURE INTERACTIVE: LE BÂTIMENT SANTÉ ==================== -->
+    <section class="section" id="batiment" data-section="facility">
+      <div class="container">
+        <div class="section-header--center reveal">
+          <span class="section-badge" data-bind="content.facility.badge"></span>
+          <h2 class="section-title" data-bind="content.facility.title"></h2>
+          <p class="section-subtitle" data-bind="content.facility.subtitle"></p>
+        </div>
+
+        <div class="interactive-facility reveal">
+          <div class="floor-tabs" role="tablist">
+            <button class="floor-tab-btn is-active" id="tab-rdc" role="tab" aria-selected="true" onclick="switchFloor('rdc')">
+              Rez-de-chaussée (Pharmacie)
+            </button>
+            <button class="floor-tab-btn" id="tab-etage1" role="tab" aria-selected="false" onclick="switchFloor('etage1')">
+              1er Étage (Pôle Médical & Labo)
+            </button>
+          </div>
+
+          <!-- Panel RDC -->
+          <div class="facility-panel is-active" id="panel-rdc">
+            <div class="facility-info-card">
+              <div>
+                <span class="floor-pill" style="margin-bottom: var(--space-xs);">RDC · Accès Plain-Pied</span>
+                <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; margin-top: 0.5rem; color: var(--color-text);">
+                  L'Officine de Dispensation & Conseil
+                </h3>
+                <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-top: 0.5rem;">
+                  Espace spacieux, climatisé et entièrement accessible, conçu pour un accueil fluide et sans attente prolongée.
+                </p>
+
+                <ul class="facility-list">
+                  <li class="facility-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span><strong>Guichets Carte CHIFA</strong> : Traitement instantané de vos ordonnances de maladies chroniques et aiguës.</span>
+                  </li>
+                  <li class="facility-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span><strong>Espace Dermo-Cosmétique & Beauté</strong> : Gammes de soins spécialisés, protection solaire, anti-âge et produits Nutraxin.</span>
+                  </li>
+                  <li class="facility-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span><strong>Univers Maman & Nourrisson</strong> : Laits infantiles spécifiques, biberonnerie stérile et hygiène pédiatrique.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div style="margin-top: var(--space-md); padding-top: var(--space-sm); border-top: 1px solid var(--color-border); font-size: 0.8125rem; color: var(--color-primary-dark); font-weight: 700;">
+                ✓ Conseil personnalisé par Dr Kazi Tani Sid Ahmed Chakib et son équipe
+              </div>
+            </div>
+
+            <div class="facility-info-card" style="background: var(--color-surface-muted);">
+              <div>
+                <span class="floor-pill" style="background: var(--color-secondary); margin-bottom: var(--space-xs);">Matériel Médical</span>
+                <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; margin-top: 0.5rem; color: var(--color-text);">
+                  Maintien à Domicile & Mobilité
+                </h3>
+                <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-top: 0.5rem;">
+                  Équipements certifiés pour personnes âgées, convalescents et personnes à mobilité réduite.
+                </p>
+
+                <ul class="facility-list">
+                  <li class="facility-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span><strong>3 Modèles de Fauteuils Roulants</strong> : Standards, légers et renforcés avec essai sur place.</span>
+                  </li>
+                  <li class="facility-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span><strong>Tensiomètres & Lecteurs de Glycémie</strong> : Modèles automatiques fiables avec étalonnage et conseil.</span>
+                  </li>
+                  <li class="facility-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span><strong>Orthopédie Générale</strong> : Attelles de cheville/genou, ceintures lombaires et colliers cervicaux.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div style="margin-top: var(--space-md); padding-top: var(--space-sm); border-top: 1px solid var(--color-border); font-size: 0.8125rem; color: var(--color-secondary); font-weight: 700;">
+                ✓ Possibilité de livraison et mise en place à domicile sur Tlemcen
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel Étage 1 -->
+          <div class="facility-panel" id="panel-etage1">
+            <div class="facility-info-card">
+              <div>
+                <span class="floor-pill" style="background: var(--color-secondary);">Étage 1</span>
+                <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; margin-top: 0.5rem; color: var(--color-text);">
+                  Laboratoire d'Analyses Médicales
+                </h3>
+                <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-top: 0.5rem;">
+                  Situé directement au-dessus de la pharmacie pour vos bilans sanguins, analyses de routine et dépistages sans déplacement inutile.
+                </p>
+
+                <ul class="facility-list">
+                  <li class="facility-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span>Prélèvements rapides dès le matin.</span>
+                  </li>
+                  <li class="facility-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span>Résultats rapides et transmission directe si nécessaire.</span>
+                  </li>
+                </ul>
+              </div>
+              <div style="font-size: 0.8125rem; color: var(--color-text-subtle);">Accès direct par escalier et ascenseur.</div>
+            </div>
+
+            <div class="facility-info-card">
+              <div>
+                <span class="floor-pill" style="background: var(--color-primary-dark);">Étage 1</span>
+                <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; margin-top: 0.5rem; color: var(--color-text);">
+                  Cabinets Médicaux Spécialistes
+                </h3>
+                <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-top: 0.5rem;">
+                  Pôle médical regroupant des praticiens de santé au même bâtiment : consultation, ordonnance et médicaments dans le même lieu.
+                </p>
+
+                <ul class="facility-list">
+                  <li class="facility-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span>Médecine générale et consultations spécialisées.</span>
+                  </li>
+                  <li class="facility-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span>Synergie directe entre médecins et pharmaciens pour la sécurité de vos traitements.</span>
+                  </li>
+                </ul>
+              </div>
+              <div style="font-size: 0.8125rem; color: var(--color-text-subtle);">En face de la BNA, Abou Tachfine (Bréa), Tlemcen.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES & DEPARTMENTS ==================== -->
+    <section class="section section--muted" id="services" data-section="offerings">
+      <div class="container">
+        <div class="section-header--center reveal">
+          <span class="section-badge" data-bind="content.offeringsSection.badge"></span>
+          <h2 class="section-title" data-bind="content.offeringsSection.title"></h2>
+          <p class="section-subtitle" data-bind="content.offeringsSection.subtitle"></p>
+        </div>
+
+        <div class="services-grid" id="services-grid">
+          <!-- Dynamically populated from siteData.offerings -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CHIFA & ORDONNANCE FAST-TRACK ==================== -->
+    <section class="section" id="chifa" data-section="chifa">
+      <div class="container">
+        <div class="chifa-box reveal">
+          <div class="chifa-box__glow"></div>
+          <div class="chifa-grid">
+            <div>
+              <span style="display:inline-block; padding:0.3rem 0.8rem; background:rgba(255,255,255,0.15); border-radius:var(--radius-pill); font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:1rem;">Service Express Ordonnance</span>
+              <h2 style="font-family: var(--font-display); font-size: clamp(1.75rem, 3.5vw, 2.5rem); font-weight:800; line-height:1.2; margin-bottom:1rem;">
+                Préparez votre passage en pharmacie sans attendre
+              </h2>
+              <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                Envoyez la photo de votre ordonnance médicale et de votre carte CHIFA via WhatsApp. Notre équipe officinale prépare votre traitement en amont : vos médicaments sont vérifiés, emballés et prêts dès votre arrivée au comptoir.
+              </p>
+
+              <div class="chifa-step">
+                <div class="chifa-step__num">1</div>
+                <div class="chifa-step__text">Prenez en photo votre ordonnance et carte CHIFA.</div>
+              </div>
+              <div class="chifa-step">
+                <div class="chifa-step__num">2</div>
+                <div class="chifa-step__text">Envoyez-la sur notre numéro WhatsApp officiel.</div>
+              </div>
+              <div class="chifa-step">
+                <div class="chifa-step__num">3</div>
+                <div class="chifa-step__text">Recevez la confirmation et récupérez votre sac sans faire la queue.</div>
+              </div>
+            </div>
+
+            <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: var(--space-lg); color: var(--color-text); box-shadow: var(--shadow-lg);">
+              <h3 style="font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; margin-bottom: 0.25rem; color: var(--color-primary-dark);">
+                Envoyer vos Photos en 1 Clic
+              </h3>
+              <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 1rem;">
+                Photographiez votre ordonnance seule et votre carte CHIFA seule depuis votre smartphone.
+              </p>
+
+              <form id="rx-upload-form" onsubmit="handlePrescriptionWhatsApp(event)" style="display:flex; flex-direction:column; gap:0.75rem;">
+                <div>
+                  <label style="display:block; font-size:0.8125rem; font-weight:700; color:var(--color-text); margin-bottom:0.25rem;">
+                    1. Photo de l'Ordonnance Médicale (seule) *
+                  </label>
+                  <input type="file" id="photo-ordonnance" accept="image/*" capture="environment" required style="width:100%; font-size:0.8125rem; padding:0.5rem; border:1.5px dashed var(--color-primary); border-radius:var(--radius-sm); background:var(--color-surface);" onchange="previewPhoto(this, 'preview-rx')" />
+                  <div id="preview-rx" style="margin-top:0.25rem; font-size:0.75rem; color:var(--color-primary-dark); font-weight:600;"></div>
+                </div>
+
+                <div>
+                  <label style="display:block; font-size:0.8125rem; font-weight:700; color:var(--color-text); margin-bottom:0.25rem;">
+                    2. Photo de la Carte CHIFA (seule) *
+                  </label>
+                  <input type="file" id="photo-chifa" accept="image/*" capture="environment" required style="width:100%; font-size:0.8125rem; padding:0.5rem; border:1.5px dashed var(--color-secondary); border-radius:var(--radius-sm); background:var(--color-surface);" onchange="previewPhoto(this, 'preview-chifa')" />
+                  <div id="preview-chifa" style="margin-top:0.25rem; font-size:0.75rem; color:var(--color-secondary); font-weight:600;"></div>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:0.5rem;">
+                  <div>
+                    <label style="display:block; font-size:0.75rem; font-weight:700; color:var(--color-text);">Nom & Prénom *</label>
+                    <input type="text" id="patient-name" required placeholder="Votre nom" style="width:100%; padding:0.45rem; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-size:0.8125rem;" />
+                  </div>
+                  <div>
+                    <label style="display:block; font-size:0.75rem; font-weight:700; color:var(--color-text);">N° Téléphone *</label>
+                    <input type="tel" id="patient-phone" required placeholder="0550 XX XX XX" style="width:100%; padding:0.45rem; border:1px solid var(--color-border); border-radius:var(--radius-sm); font-size:0.8125rem;" />
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn--whatsapp btn--lg" style="width:100%; margin-top:0.25rem;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
+                  <span>Transmettre sur WhatsApp Officiel</span>
+                </button>
+              </form>
+
+              <div style="font-size:0.75rem; color:var(--color-text-muted); text-align:center; margin-top:0.5rem;">
+                Vos photos s'attachent automatiquement à votre message WhatsApp sécurisé.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== VIDEO TOUR SECTION ==================== -->
+    <section class="section" id="video" data-section="video">
+      <div class="container">
+        <div class="section-header--center reveal">
+          <span class="section-badge">Visite Virtuelle & Réseaux Sociaux</span>
+          <h2 class="section-title">Découvrez en Vidéo le Complexe Santé SAC</h2>
+          <p class="section-subtitle">
+            Plongez au cœur de nos 2 étages à Abou Tachfine : la grande officine au rez-de-chaussée, l'espace dermo-cosmétique, le rayon fauteuils roulants et le pôle médical au 1er étage.
+          </p>
+        </div>
+
+        <div class="video-showcase-card reveal">
+          <div class="video-thumbnail-container" id="video-player-container">
+            <img src="images/facade-abou-tachfine.jpg" alt="Visite vidéo Pharmacie KAZI TANI" class="video-bg-img" id="video-poster" />
+            <div class="video-overlay-gradient"></div>
+
+            <button class="video-play-btn" id="main-play-btn" aria-label="Lancer la vidéo de présentation" onclick="playPharmacyVideo()">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+
+            <!-- Video player replacement on click -->
+            <div id="video-embed-target" style="display:none; position:absolute; inset:0; z-index:20; background:#000;">
+              <iframe
+                id="pharmacy-video-iframe"
+                src=""
+                title="Vidéo officielle Pharmacie Kazi Tlemcen"
+                style="width:100%; height:100%; border:0;"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div style="position:absolute; bottom:1rem; left:1.5rem; z-index:10; color:#fff;">
+              <span style="display:inline-block; padding:0.25rem 0.65rem; background:rgba(15,118,110,0.85); border-radius:var(--radius-pill); font-size:0.75rem; font-weight:800; text-transform:uppercase; margin-bottom:0.35rem;">Vidéo Officielle</span>
+              <h3 style="font-family:var(--font-display); font-size:1.35rem; font-weight:800;">Présentation du Bâtiment Médical à Abou Tachfine</h3>
+            </div>
+          </div>
+
+          <div class="video-info-bar">
+            <div>
+              <div style="font-size:0.875rem; font-weight:700; color:#F8FAFC;">Retrouvez nos vidéos et conseils santé sur nos comptes officiels :</div>
+              <div style="font-size:0.75rem; color:#94A3B8;">Nouvelles présentations de produits, astuces prévention et arrivages de matériel médical.</div>
+            </div>
+
+            <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+              <a href="https://www.instagram.com/pharmacie_kazi/" target="_blank" rel="noopener noreferrer" class="btn btn--sm" style="background:#E1306C; color:#fff;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                <span>Reels Instagram @pharmacie_kazi</span>
+              </a>
+              <a href="https://www.facebook.com/p/Pharmacie-Kazi-tlemcen-61575630643250/" target="_blank" rel="noopener noreferrer" class="btn btn--sm" style="background:#1877F2; color:#fff;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                <span>Vidéos Facebook</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SOCIAL MEDIA FEED & REAL PHOTOS ==================== -->
+    <section class="section section--muted" id="reseaux" data-section="social">
+      <div class="container">
+        <div class="section-header--center reveal">
+          <span class="section-badge">Publications Directes</span>
+          <h2 class="section-title">Actualités & Photos depuis Nos Réseaux</h2>
+          <p class="section-subtitle">
+            Retrouvez les dernières publications partagées par l'équipe sur notre page Instagram <a href="https://www.instagram.com/pharmacie_kazi" target="_blank" style="color:var(--color-primary); font-weight:700;">@pharmacie_kazi</a> et Facebook.
+          </p>
+        </div>
+
+        <div class="social-feed-grid" id="social-feed-grid">
+          <!-- Post 1: Façade & Bâtiment 2 Étages -->
+          <article class="social-post-card reveal">
+            <div class="social-post-img-wrap">
+              <img src="images/facade-abou-tachfine.jpg" alt="Façade Abou Tachfine en face BNA" class="social-post-img" />
+              <div class="social-network-badge badge--insta">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
+                <span>Instagram</span>
+              </div>
+            </div>
+            <div class="social-post-content">
+              <p class="social-post-caption">
+                « Deux étages dédiés à votre santé et votre bien-être, avec tout ce qu'il vous faut, au même endroit. » <br/>
+                طابقان مخصصان لصحتك ورفاهيتك، مع كل ما تحتاجه، في مكان واحد. 📍 Abou Tachfine en face la BNA.
+              </p>
+              <div class="social-post-tags">#Tlemcen #PharmacieKazi #AbouTachfine #Sante #BienEtre</div>
+            </div>
+            <div class="social-post-footer">
+              <span>Pharmacie Kazi</span>
+              <a href="https://www.instagram.com/pharmacie_kazi/" target="_blank" rel="noopener">Voir sur Instagram →</a>
+            </div>
+          </article>
+
+          <!-- Post 2: Fauteuils Roulants & Matériel -->
+          <article class="social-post-card reveal">
+            <div class="social-post-img-wrap">
+              <img src="images/fauteuils-roulants.jpg" alt="Fauteuils roulants 3 modèles" class="social-post-img" />
+              <div class="social-network-badge badge--insta">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
+                <span>Instagram</span>
+              </div>
+            </div>
+            <div class="social-post-content">
+              <p class="social-post-caption">
+                « Parce que chaque personne a des besoins uniques, nous mettons tout en œuvre pour vous proposer des équipements adaptés. Ici, 3 modèles de fauteuils roulants pour vous accompagner au quotidien. Prenez soin de vous 💙 »
+              </p>
+              <div class="social-post-tags">#MaterielMedical #FauteuilRoulant #Handicap #Mobilite #Tlemcen</div>
+            </div>
+            <div class="social-post-footer">
+              <span>Pharmacie Kazi</span>
+              <a href="https://www.instagram.com/pharmacie_kazi/" target="_blank" rel="noopener">Voir sur Instagram →</a>
+            </div>
+          </article>
+
+          <!-- Post 3: Nutraxin Algérie -->
+          <article class="social-post-card reveal">
+            <div class="social-post-img-wrap">
+              <img src="images/dermo-nutraxin.jpg" alt="Gamme Nutraxin Algérie" class="social-post-img" />
+              <div class="social-network-badge badge--fb">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                <span>Facebook</span>
+              </div>
+            </div>
+            <div class="social-post-content">
+              <p class="social-post-caption">
+                « Gamme @nutraxin_algerie disponible dans votre pharmacie : magnésium, collagène marin, vitamines mémoire & concentration. Des produits de qualité pour sublimer votre bien-être au quotidien 🌸 »
+              </p>
+              <div class="social-post-tags">#NutraxinAlgerie #ComplementsAlimentaires #DermoCosmetique</div>
+            </div>
+            <div class="social-post-footer">
+              <span>Pharmacie Kazi</span>
+              <a href="https://www.facebook.com/p/Pharmacie-Kazi-tlemcen-61575630643250/" target="_blank" rel="noopener">Voir sur Facebook →</a>
+            </div>
+          </article>
+
+          <!-- Post 4: Conseil du jour Prévention -->
+          <article class="social-post-card reveal">
+            <div class="social-post-img-wrap">
+              <img src="images/interieur-rdc.jpg" alt="Conseil du jour en officine" class="social-post-img" />
+              <div class="social-network-badge badge--insta">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
+                <span>Instagram</span>
+              </div>
+            </div>
+            <div class="social-post-content">
+              <p class="social-post-caption">
+                « Conseil du jour 👨‍⚕️ : La prévention est le plus beau des soins. Une simple visite chez ton médecin ou ton pharmacien peut faire toute la différence. Rappelle-toi : écouter ton corps, c'est choisir de te prioriser. الوقاية خير من العلاج »
+              </p>
+              <div class="social-post-tags">#ConseilSante #Prevention #Officine #Pharmacien #Tlemcen</div>
+            </div>
+            <div class="social-post-footer">
+              <span>Pharmacie Kazi</span>
+              <a href="https://www.instagram.com/pharmacie_kazi/" target="_blank" rel="noopener">Voir sur Instagram →</a>
+            </div>
+          </article>
+
+          <!-- Post 5: Étage Médical & Labo -->
+          <article class="social-post-card reveal">
+            <div class="social-post-img-wrap">
+              <img src="images/etage-medical.jpg" alt="Laboratoire et cabinets médicaux" class="social-post-img" />
+              <div class="social-network-badge badge--fb">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                <span>Facebook</span>
+              </div>
+            </div>
+            <div class="social-post-content">
+              <p class="social-post-caption">
+                « 𝗣𝗵𝗮𝗿𝗺𝗮𝗰𝗶𝗲 / 𝗟𝗮𝗯𝗼𝗿𝗮𝘁𝗼𝗶𝗿𝗲 𝗱'𝗮𝗻𝗮𝗹𝘆𝘀𝗲𝘀 𝗺𝗲́𝗱𝗶𝗰𝗮𝗹𝗲𝘀 / 𝗖𝗮𝗯𝗶𝗻𝗲𝘁𝘀 𝗺𝗲́𝗱𝗶𝗰𝗮𝘂𝘅 📍 Abou Tachfine en face la BNA. Tout le parcours de soins sous un même toit pour nos patients. »
+              </p>
+              <div class="social-post-tags">#PoleMedical #LaboratoireAnalyses #Medecins #Tlemcen</div>
+            </div>
+            <div class="social-post-footer">
+              <span>Pharmacie Kazi</span>
+              <a href="https://www.facebook.com/p/Pharmacie-Kazi-tlemcen-61575630643250/" target="_blank" rel="noopener">Voir sur Facebook →</a>
+            </div>
+          </article>
+
+          <!-- Post 6: Espace Maman & Bébé -->
+          <article class="social-post-card reveal">
+            <div class="social-post-img-wrap">
+              <img src="images/espace-bebe.jpg" alt="Espace pédiatrique maman et bébé" class="social-post-img" />
+              <div class="social-network-badge badge--insta">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
+                <span>Instagram</span>
+              </div>
+            </div>
+            <div class="social-post-content">
+              <p class="social-post-caption">
+                « Un espace douillet dédié aux tout-petits et aux jeunes mamans : sélection rigoureuse de laits infantiles de spécialité, biberons sans BPA et soins hypoallergéniques. »
+              </p>
+              <div class="social-post-tags">#MamanBebe #Puericulture #Pédiatrie #Tlemcen</div>
+            </div>
+            <div class="social-post-footer">
+              <span>Pharmacie Kazi</span>
+              <a href="https://www.instagram.com/pharmacie_kazi/" target="_blank" rel="noopener">Voir sur Instagram →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PRACTICAL INFO & CONTACT ==================== -->
+    <section class="section section--muted" id="infos" data-section="practical">
+      <div class="container">
+        <div class="section-header--center reveal">
+          <span class="section-badge" data-bind="content.practical.badge"></span>
+          <h2 class="section-title" data-bind="content.practical.title"></h2>
+          <p class="section-subtitle" data-bind="content.practical.subtitle"></p>
+        </div>
+
+        <div class="practical-grid">
+          <div class="practical-info reveal">
+            <!-- Address Card -->
+            <div class="info-card">
+              <div class="info-card__icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="info-card__title">Adresse de l'Officine</div>
+                <div class="info-card__val" data-bind="business.address"></div>
+                <div class="info-card__sub" data-bind="business.landmark"></div>
+              </div>
+            </div>
+
+            <!-- Hours Card -->
+            <div class="info-card">
+              <div class="info-card__icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div style="width: 100%;">
+                <div class="info-card__title">Horaires d'Ouverture (7j/7)</div>
+                <div class="info-card__val">Ouvert en continu de 08:30 à 00:00 (Minuit)</div>
+                <div class="info-card__sub">Service garanti 7j/7 de 09:00 à Minuit (Vendredi à partir de 17:00).</div>
+                <div style="margin-top: 0.5rem; font-size: 0.75rem; background: var(--color-primary-subtle); padding: 0.4rem 0.65rem; border-radius: var(--radius-sm); color: var(--color-primary-dark); font-weight: 600;">
+                  ℹ️ Garde de nuit : Roulement hebdomadaire officiel DSP Tlemcen. En cas d'astreinte après minuit, consultez l'affichage lumineux en façade ou contactez le 043 22 86 43.
+                </div>
+                <table class="hours-table" id="hours-table"></table>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="info-card">
+              <div class="info-card__icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="info-card__title">Ligne Téléphonique Directe</div>
+                <div class="info-card__val">
+                  <a href="tel:+21343228643" data-bind="business.phone" style="color: var(--color-primary-dark); text-decoration: underline;"></a>
+                </div>
+                <div class="info-card__sub">Appel pour disponibilité d'un médicament ou conseil urgent</div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
+              <a href="https://maps.app.goo.gl/ogWBTV9YzLBPCCAE8" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span>Itinéraire Google Maps</span>
+              </a>
+              <a href="https://www.instagram.com/pharmacie_kazi" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
+                <span>Instagram @pharmacie_kazi</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Embedded Map -->
+          <div class="map-frame reveal notranslate" translate="no">
+            <iframe
+              title="Carte Google Maps Pharmacie KAZI TANI Tlemcen"
+              src="https://maps.google.com/maps?q=Abou+Tachfine+Tlemcen+BNA&amp;hl=fr&amp;z=15&amp;output=embed"
+              loading="lazy"
+              style="width: 100%; height: 100%; min-height: 380px; border: 0;"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="footer" data-section="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom: var(--space-sm);">
+            <div class="brand__emblem">SAC</div>
+            <div>
+              <div class="brand__title" style="color: #FFFFFF;" data-bind="business.name"></div>
+              <div class="brand__arabic" style="color: var(--color-primary-light);" data-bind="business.nameArabic"></div>
+            </div>
+          </div>
+          <p style="color: #94A3B8; line-height: 1.6; margin-bottom: 1rem;">
+            Officine de santé, parapharmacie et matériel médical sur 2 étages. Conventionné CHIFA, suivi personnalisé et bienveillance au cœur de Tlemcen.
+          </p>
+          <p style="color: var(--color-primary-light); font-weight: 700;">
+            <span data-bind="business.address"></span>
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-title">Départements Santé</div>
+          <ul class="footer-links">
+            <li><a href="#services">Guichet Tiers-Payant CHIFA</a></li>
+            <li><a href="#services">Dermo-Cosmétique Nutraxin</a></li>
+            <li><a href="#services">Espace Maman & Bébé</a></li>
+            <li><a href="#services">Fauteuils Roulants & Maintien</a></li>
+            <li><a href="#batiment">Laboratoire & Cabinets (Étage 1)</a></li>
+            <li><a href="#chifa">Transmission WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Contact & Horaires</div>
+          <p style="color: #94A3B8; margin-bottom: 0.5rem;">Ouvert 7j/7 de 08:30 à 00:00</p>
+          <p style="color: #FFFFFF; font-weight: 700; margin-bottom: 1rem;">
+            Tél : <a href="tel:+21343228643" data-bind="business.phone" style="color: var(--color-primary-light); text-decoration: underline;"></a>
+          </p>
+          <div class="footer-title" style="margin-top: 1rem;">Réseaux Sociaux</div>
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="https://www.instagram.com/pharmacie_kazi" target="_blank" rel="noopener noreferrer" style="padding: 0.5rem; background: rgba(255,255,255,0.08); border-radius: 50%; color: #fff;" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/p/Pharmacie-Kazi-tlemcen-61575630643250/" target="_blank" rel="noopener noreferrer" style="padding: 0.5rem; background: rgba(255,255,255,0.08); border-radius: 50%; color: #fff;" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://maps.app.goo.gl/ogWBTV9YzLBPCCAE8" target="_blank" rel="noopener noreferrer" style="padding: 0.5rem; background: rgba(255,255,255,0.08); border-radius: 50%; color: #fff;" aria-label="Google Maps">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid #1E293B; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.8125rem;">
+        <div>© 2026 Pharmacie KAZI TANI SID AHMED CHAKIB (SAC). Tous droits réservés.</div>
+        <div style="color: #64748B;">Abou Tachfine (Bréa) · Tlemcen 13000 · Algérie</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Bar -->
+  <div class="mobile-bar" aria-label="Actions rapides">
+    <a href="tel:+21343228643" class="btn btn--secondary" data-bind-href="business.phoneHref">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Appeler</span>
+    </a>
+    <a href="https://wa.me/21343228643" class="btn btn--whatsapp" data-bind-href="business.whatsappUrl" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
+      <span>WhatsApp Ordonnance</span>
+    </a>
+  </div>
+
+  <!-- ==================== CONTRACT DATA LAYER (#site-data) ==================== -->
+  <script id="site-data" type="application/json">
+  {
+    "$contract": "maps-to-landing/site-data@1",
+    "meta": {
+      "template": "pharma-healthcare-v1",
+      "version": "1.0.0",
+      "generatedAt": "2026-10-11T18:50:00Z"
+    },
+    "business": {
+      "name": "Pharmacie KAZI TANI (SAC)",
+      "nameArabic": "صيدلية قاضي ثاني سيدي أحمد شكيب",
+      "category": "Pharmacie d'officine & Parapharmacie",
+      "categoryGoogle": "Pharmacy",
+      "address": "Abou Tachfine (Bréa), en face de la BNA, Tlemcen 13000",
+      "addressShort": "Abou Tachfine · Tlemcen",
+      "city": "Tlemcen",
+      "region": "Wilaya de Tlemcen",
+      "country": "Algérie",
+      "countryCode": "DZ",
+      "postalCode": "13000",
+      "neighborhood": "Abou Tachfine (Bréa)",
+      "landmark": "En face de la banque BNA, bâtiment médical à 2 étages",
+      "phone": "+213 43 22 86 43",
+      "phoneRaw": "043228643",
+      "phoneHref": "tel:+21343228643",
+      "whatsapp": "+213 43 22 86 43",
+      "whatsappUrl": "https://wa.me/21343228643?text=Bonjour%20Pharmacie%20Kazi%20Tani,%20je%20souhaite%20un%20renseignement",
+      "mapsUrl": "https://maps.app.goo.gl/ogWBTV9YzLBPCCAE8",
+      "rating": 4.9,
+      "reviewCount": 42,
+      "priceLevel": "€",
+      "priceRange": "Tarification conventionnée CHIFA & prix officinaux",
+      "currency": "DZD",
+      "ownerName": "Dr Kazi Tani Sid Ahmed Chakib",
+      "hours": {
+        "isOpenNow": true,
+        "statusLabel": "Ouvert jusqu'à 00:00 (Minuit)",
+        "schedule": [
+          { "day": "sunday", "label": "Dimanche", "opens": "09:00", "closes": "00:00", "isClosed": false },
+          { "day": "monday", "label": "Lundi", "opens": "09:00", "closes": "00:00", "isClosed": false },
+          { "day": "tuesday", "label": "Mardi", "opens": "09:00", "closes": "00:00", "isClosed": false },
+          { "day": "wednesday", "label": "Mercredi", "opens": "09:00", "closes": "00:00", "isClosed": false },
+          { "day": "thursday", "label": "Jeudi", "opens": "09:00", "closes": "00:00", "isClosed": false },
+          { "day": "friday", "label": "Vendredi", "opens": "17:00", "closes": "00:00", "isClosed": false },
+          { "day": "saturday", "label": "Samedi", "opens": "09:00", "closes": "00:00", "isClosed": false }
+        ]
+      }
+    },
+    "offerings": [
+      {
+        "id": "chifa-tiers-payant",
+        "category": "services",
+        "name": "Guichet Tiers-Payant Carte CHIFA",
+        "description": "Prise en charge instantanée de vos ordonnances de longue durée (ALD), diabète, HTA et soins courants avec validation CNAS / CASNOS.",
+        "price": 0,
+        "priceDisplay": "Tiers-Payant 100% CHIFA",
+        "currency": "DZD",
+        "badge": "Conventionné",
+        "dietary": ["CNAS", "CASNOS", "Gratuit avec CHIFA"]
+      },
+      {
+        "id": "fauteuils-roulants",
+        "category": "materiel",
+        "name": "Fauteuils Roulants & Maintien à Domicile",
+        "description": "3 modèles adaptés pour adulte et senior : standard pliant, confort renforcé et allégé. Essai sur place et mise en service.",
+        "price": 28000,
+        "priceDisplay": "Sur devis & conseil personnalisé",
+        "currency": "DZD",
+        "badge": "3 Modèles Disponibles",
+        "dietary": ["Mobilité", "Certifié Médical"]
+      },
+      {
+        "id": "dermo-nutraxin",
+        "category": "parapharmacie",
+        "name": "Parapharmacie & Compléments Nutraxin",
+        "description": "Gamme complète Nutraxin Algérie : magnésium, collagène marin, vitamines mémoire/concentration et soins dermo-esthétiques certifiés.",
+        "price": 1800,
+        "priceDisplay": "Tarifs officiels certifiés",
+        "currency": "DZD",
+        "badge": "Gamme Officielle",
+        "dietary": ["Nutraxin", "Dermo-Cosmétique"]
+      },
+      {
+        "id": "maman-bebe",
+        "category": "parapharmacie",
+        "name": "Espace Pédiatrique & Maman-Bébé",
+        "description": "Laits infantiles 1er/2e âge et hypoallergéniques, biberonnerie sans BPA, tire-laits, soins du siège et pesée bébé gratuite.",
+        "price": 950,
+        "priceDisplay": "Prix conventionnés",
+        "currency": "DZD",
+        "badge": "Conseil Maman",
+        "dietary": ["Puériculture", "Pédiatrie"]
+      },
+      {
+        "id": "depistage-glycemie-tension",
+        "category": "services",
+        "name": "Dépistage Tension & Glycémie Capillaire",
+        "description": "Mesure instantanée de la pression artérielle et de la glycémie à jeun par un pharmacien diplômé avec carnet de suivi.",
+        "price": 0,
+        "priceDisplay": "Service Offert en Officine",
+        "currency": "DZD",
+        "badge": "Prévention",
+        "dietary": ["Contrôle gratuit", "Sans rendez-vous"]
+      },
+      {
+        "id": "pole-medical-labo",
+        "category": "pole",
+        "name": "Laboratoire & Cabinets Médicaux (Étage 1)",
+        "description": "Prélèvements biologiques, analyses sanguines et consultations spécialisées directement au premier étage du bâtiment.",
+        "price": 0,
+        "priceDisplay": "1er Étage du Bâtiment",
+        "currency": "DZD",
+        "badge": "Pôle 2 Étages",
+        "dietary": ["Analyses", "Consultations"]
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Amine B.",
+        "rating": 5,
+        "date": "Il y a 2 mois",
+        "source": "Google Maps",
+        "text": "Pharmacie très moderne sur deux étages, accueil chaleureux et professionnel. Prise en charge rapide avec la carte CHIFA et de très bons conseils pour le matériel médical.",
+        "highlight": "Pharmacie moderne sur deux étages, accueil chaleureux"
+      },
+      {
+        "author": "Fatima Zohra M.",
+        "rating": 5,
+        "date": "Il y a 3 mois",
+        "source": "Google Maps",
+        "text": "Le personnel est d'une grande gentillesse et à l'écoute. J'y trouve toujours tous mes médicaments et des produits de parapharmacie de grande qualité. Ouvert jusqu'à minuit c'est très rassurant !",
+        "highlight": "Gentillesse, écoute et ouvert jusqu'à minuit"
+      },
+      {
+        "author": "Dr Mehdi K.",
+        "rating": 5,
+        "date": "Il y a 5 mois",
+        "source": "Facebook",
+        "text": "Un vrai complexe de santé à Abou Tachfine. Avoir le laboratoire et les médecins au 1er étage avec la pharmacie au rez-de-chaussée est un confort inestimable pour les patients.",
+        "highlight": "Complexe santé complet avec laboratoire et cabinets"
+      }
+    ],
+    "gallery": [
+      {
+        "id": "gal-facade",
+        "slot": "facade-building",
+        "title": "Façade & Bâtiment de Santé à Abou Tachfine",
+        "caption": "Bâtiment moderne sur 2 étages en face de la banque BNA",
+        "aspect": "16/10",
+        "url": "images/facade-abou-tachfine.jpg"
+      },
+      {
+        "id": "gal-officine",
+        "slot": "pharmacy-interior",
+        "title": "Officine Moderne & Comptoirs CHIFA",
+        "caption": "Espace spacieux, climatisé et confidentiel au rez-de-chaussée",
+        "aspect": "16/10",
+        "url": "images/interieur-rdc.jpg"
+      },
+      {
+        "id": "gal-etage",
+        "slot": "medical-floor",
+        "title": "1er Étage · Laboratoire & Médecins Spécialistes",
+        "caption": "Analyses biologiques et consultations médicales dans le même lieu",
+        "aspect": "16/10",
+        "url": "images/etage-medical.jpg"
+      },
+      {
+        "id": "gal-materiel",
+        "slot": "wheelchairs",
+        "title": "Rayon Mobilité & Fauteuils Roulants",
+        "caption": "3 modèles de fauteuils roulants et maintien à domicile",
+        "aspect": "16/10",
+        "url": "images/fauteuils-roulants.jpg"
+      },
+      {
+        "id": "gal-dermo",
+        "slot": "dermo-nutraxin",
+        "title": "Parapharmacie & Gamme Nutraxin",
+        "caption": "Soins de la peau, compléments alimentaires et micronutrition",
+        "aspect": "16/10",
+        "url": "images/dermo-nutraxin.jpg"
+      },
+      {
+        "id": "gal-bebe",
+        "slot": "baby-care",
+        "title": "Univers Maman & Nourrisson",
+        "caption": "Laits infantiles spécifiques, puériculture et soins pédiatriques",
+        "aspect": "16/10",
+        "url": "images/espace-bebe.jpg"
+      }
+    ],
+    "assets": {
+      "logoUrl": null,
+      "heroImageUrl": null
+    },
+    "seo": {
+      "title": "Pharmacie KAZI TANI SID AHMED CHAKIB (SAC) · Tlemcen",
+      "description": "Pharmacie d'officine, parapharmacie et matériel médical sur 2 étages à Abou Tachfine (Bréa), en face de la BNA, Tlemcen. Ouvert 7j/7 de 8h30 à minuit. Conventionné CHIFA.",
+      "canonical": "https://pharmacie-kazi-tani.dz/"
+    },
+    "missing": [
+      "Vraies photos haute résolution des 2 étages de la pharmacie et de la devanture à Abou Tachfine",
+      "Logo officiel haute définition vectoriel si disponible (actuellement monogramme SAC)",
+      "Numéro direct supplémentaire de garde si astreinte de nuit après minuit"
+    ],
+    "content": {
+      "header": {
+        "nav": [
+          { "label": "Le Bâtiment Santé", "href": "#batiment" },
+          { "label": "Nos Départements", "href": "#services" },
+          { "label": "Ordonnance CHIFA", "href": "#chifa" },
+          { "label": "Accès & Horaires", "href": "#infos" }
+        ]
+      },
+      "hero": {
+        "badge": "Pôle Santé & Officine Moderne · Abou Tachfine, Tlemcen",
+        "headline": "Deux étages dédiés à <span>votre santé</span> et votre bien-être.",
+        "lead": "À Abou Tachfine en face de la BNA, la Pharmacie KAZI TANI réunit dispensation d'ordonnances CHIFA, dermo-cosmétique de pointe, matériel médical et pôle de santé pluridisciplinaire. Ouvert 7j/7 jusqu'à minuit.",
+        "ctaPrimary": "Transmettre mon ordonnance"
+      },
+      "facility": {
+        "badge": "Architecture Médicale Intégrée",
+        "title": "Deux Étages Conçus pour Votre Parcours de Soins",
+        "subtitle": "« طابقان مخصصان لصحتك ورفاهيتك، مع كل ما تحتاجه، في مكان واحد » — Tout au même endroit pour éviter les déplacements fatigants aux patients."
+      },
+      "offeringsSection": {
+        "badge": "Expertise & Prise en Charge",
+        "title": "Nos Services & Gammes Thérapeutiques",
+        "subtitle": "Des médicaments essentiels sous convention CHIFA jusqu'au conseil en micronutrition et maintien à domicile."
+      },
+      "practical": {
+        "badge": "Localisation & Disponibilité",
+        "title": "Nous Trouver à Abou Tachfine (Bréa)",
+        "subtitle": "Idéalement situé en face de la banque BNA, avec stationnement aisé et accès plain-pied."
+      }
+    }
+  }
+  </script>
+
+  <!-- ==================== LOGIC & INTERACTIONS ==================== -->
+  <script>
+    (function() {
+      let siteData = {};
+      try {
+        const scriptEl = document.getElementById('site-data');
+        if (scriptEl) siteData = JSON.parse(scriptEl.textContent);
+      } catch (e) {
+        console.error("Erreur de parsing site-data:", e);
+      }
+
+      function resolvePath(obj, path) {
+        return path.split('.').reduce((prev, curr) => {
+          const match = curr.match(/(.*?)\[(\d+)\]/);
+          if (match) return prev && prev[match[1]] ? prev[match[1]][parseInt(match[2])] : undefined;
+          return prev ? prev[curr] : undefined;
+        }, obj);
+      }
+
+      function applyDataBindings() {
+        document.querySelectorAll('[data-bind]').forEach(el => {
+          const path = el.getAttribute('data-bind');
+          const val = resolvePath(siteData, path);
+          if (val !== undefined && val !== null) {
+            el.innerHTML = val;
+          }
+        });
+
+        document.querySelectorAll('[data-bind-href]').forEach(el => {
+          const path = el.getAttribute('data-bind-href');
+          const val = resolvePath(siteData, path);
+          if (val) el.setAttribute('href', val);
+        });
+      }
+
+      function renderServices() {
+        const grid = document.getElementById('services-grid');
+        if (!grid || !siteData.offerings) return;
+        grid.innerHTML = '';
+
+        siteData.offerings.forEach(item => {
+          const card = document.createElement('article');
+          card.className = 'service-card reveal is-visible';
+
+          const tagsHtml = (item.dietary || []).map(t => '<span style="font-size:0.75rem; background:var(--color-surface-muted); padding:0.2rem 0.5rem; border-radius:4px;">' + t + '</span>').join(' ');
+
+          card.innerHTML = `
+            ${item.badge ? `<span class="service-card__badge">${item.badge}</span>` : ''}
+            <div>
+              <div class="service-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+              </div>
+              <h3 class="service-card__title" style="margin-top:0.75rem;">${item.name}</h3>
+              <p class="service-card__desc">${item.description}</p>
+            </div>
+            <div>
+              <div style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-bottom:0.75rem;">${tagsHtml}</div>
+              <div class="service-card__footer">
+                <span>${item.priceDisplay}</span>
+                <a href="https://wa.me/21343228643?text=Demande%20d%20info%20sur%20:%20${encodeURIComponent(item.name)}" target="_blank" rel="noopener" style="color:var(--color-primary); font-weight:800; display:inline-flex; align-items:center; gap:0.25rem;">
+                  Consulter →
+                </a>
+              </div>
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+      }
+
+      function renderSchedule() {
+        const table = document.getElementById('hours-table');
+        if (!table || !siteData.business?.hours?.schedule) return;
+        table.innerHTML = '';
+
+        const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+        const todayKey = days[new Date().getDay()];
+
+        siteData.business.hours.schedule.forEach(s => {
+          const row = document.createElement('tr');
+          if (s.day === todayKey) row.className = 'is-today';
+          const timeText = s.isClosed ? 'Fermé' : `${s.opens} - ${s.closes}`;
+          row.innerHTML = `
+            <td>${s.label}</td>
+            <td>${timeText}</td>
+          `;
+          table.appendChild(row);
+        });
+      }
+
+      window.switchFloor = function(floorId) {
+        document.querySelectorAll('.floor-tab-btn').forEach(btn => btn.classList.remove('is-active'));
+        document.querySelectorAll('.facility-panel').forEach(p => p.classList.remove('is-active'));
+
+        const activeBtn = document.getElementById('tab-' + floorId);
+        const activePanel = document.getElementById('panel-' + floorId);
+        if (activeBtn) activeBtn.classList.add('is-active');
+        if (activePanel) activePanel.classList.add('is-active');
+      };
+
+      function setupScrollReveal() {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+            }
+          });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+      }
+
+      function injectJsonLd() {
+        if (!siteData.business) return;
+        const b = siteData.business;
+        const schema = {
+          "@context": "https://schema.org",
+          "@type": "Pharmacy",
+          "name": b.name,
+          "alternateName": b.nameArabic,
+          "description": siteData.seo?.description,
+          "url": siteData.seo?.canonical,
+          "telephone": b.phone,
+          "priceRange": b.priceRange,
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Abou Tachfine (Bréa), en face de la BNA",
+            "addressLocality": b.city,
+            "postalCode": b.postalCode,
+            "addressCountry": b.countryCode
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "08:30",
+              "closes": "00:00"
+            }
+          ]
+        };
+        const s = document.createElement('script');
+        s.type = 'application/ld+json';
+        s.textContent = JSON.stringify(schema, null, 2);
+        document.head.appendChild(s);
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        applyDataBindings();
+        renderServices();
+        renderSchedule();
+        setupScrollReveal();
+        injectJsonLd();
+      });
+    })();
+  </script>
+</body>
+</html>

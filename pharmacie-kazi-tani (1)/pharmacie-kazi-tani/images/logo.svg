@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14B8A6" />
+      <stop offset="50%" stop-color="#0F766E" />
+      <stop offset="100%" stop-color="#115E59" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Medical Shield / Circle -->
+  <rect x="20" y="20" width="460" height="460" rx="100" fill="#FFFFFF" stroke="url(#tealGrad)" stroke-width="8" />
+  <circle cx="250" cy="250" r="205" fill="none" stroke="#F1F5F9" stroke-width="4" />
+
+  <!-- Pharmacy Green Cross -->
+  <path d="M220 90 H280 V180 H370 V240 H280 V330 H220 V240 H130 V180 H220 Z" fill="url(#emeraldGrad)" />
+
+  <!-- Bowl of Hygieia & Serpent Symbol in Center -->
+  <g transform="translate(250, 210)" fill="#FFFFFF">
+    <path d="M-28 -5 C-28 20, 28 20, 28 -5 C18 -5, 12 -2, 0 -2 C-12 -2, -18 -5, -28 -5 Z" />
+    <path d="M-4 15 L4 15 L2 35 L-2 35 Z" />
+    <rect x="-16" y="35" width="32" height="6" rx="2" />
+    <!-- Serpent coiling upward -->
+    <path d="M0 10 Q14 -5 0 -20 Q-14 -35 0 -50 Q10 -60 0 -68" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+    <circle cx="0" cy="-70" r="3.5" />
+  </g>
+
+  <!-- Monogram SAC & Typography -->
+  <text x="250" y="375" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="26" font-weight="800" fill="#0F172A" letter-spacing="3">PHARMACIE KAZI TANI</text>
+  <text x="250" y="405" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="800" fill="#0F766E" letter-spacing="6">S · A · C</text>
+  <text x="250" y="432" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#059669">صيدلية قاضي ثاني</text>
+  <text x="250" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#64748B" letter-spacing="2">ABOU TACHFINE · TLEMCEN</text>
+</svg>
