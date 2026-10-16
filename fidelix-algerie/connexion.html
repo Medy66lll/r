@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion Espace Pro · Fidelix Algérie</title>
+  <meta name="description" content="Portail d'accès sécurisé pour commerçants et serveurs Fidelix Algérie. Connexion Gérant et Code PIN caisse rapide.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background:linear-gradient(135deg, #0f172a, #1e293b); min-height:100vh; display:flex; align-items:center; justify-content:center; padding:1.5rem;">
+
+  <div style="background:#ffffff; border-radius:24px; max-width:440px; width:100%; padding:2.5rem; box-shadow:0 25px 50px -12px rgba(0,0,0,0.5);">
+    
+    <!-- Logo & Titre -->
+    <div style="text-align:center; margin-bottom:2rem;">
+      <a href="index.html" style="display:inline-flex; align-items:center; gap:0.5rem; margin-bottom:1rem;">
+        <div class="brand-logo-badge" style="width:44px; height:44px; font-size:1.35rem;">F</div>
+      </a>
+      <h1 style="font-size:1.6rem; font-weight:800; color:#0f172a;">Espace Pro Fidelix DZ</h1>
+      <p style="color:#64748b; font-size:0.9rem;">Accès au Tableau de Bord & Scanner Caisse</p>
+    </div>
+
+    <!-- Onglets de sélection du rôle -->
+    <div style="display:flex; background:#f1f5f9; padding:4px; border-radius:10px; margin-bottom:1.5rem;">
+      <button id="tab-gerant" onclick="switchTab('gerant')" style="flex:1; padding:0.6rem; border:none; border-radius:8px; font-weight:700; cursor:pointer; background:#ffffff; color:#0f172a; box-shadow:0 2px 4px rgba(0,0,0,0.05);">
+        Gérant / Manager
+      </button>
+      <button id="tab-serveur" onclick="switchTab('serveur')" style="flex:1; padding:0.6rem; border:none; border-radius:8px; font-weight:700; cursor:pointer; background:transparent; color:#64748b;">
+        Serveur (Code PIN)
+      </button>
+    </div>
+
+    <!-- FORMULAIRE GÉRANT (Email ou Mobile DZ) -->
+    <form id="form-gerant" onsubmit="event.preventDefault(); window.location.href='dashboard-gerant.html';">
+      <div style="margin-bottom:1rem;">
+        <label style="display:block; font-weight:700; font-size:0.85rem; margin-bottom:0.4rem; color:#334155;">Numéro Mobile DZ ou Email :</label>
+        <input type="text" placeholder="0550 12 34 56 ou contact@cafe.dz" required style="width:100%; padding:0.75rem; border:1px solid #cbd5e1; border-radius:8px; font-size:0.95rem;">
+      </div>
+
+      <div style="margin-bottom:1.25rem;">
+        <label style="display:block; font-weight:700; font-size:0.85rem; margin-bottom:0.4rem; color:#334155;">Mot de passe :</label>
+        <input type="password" value="••••••••" required style="width:100%; padding:0.75rem; border:1px solid #cbd5e1; border-radius:8px; font-size:0.95rem;">
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%; padding:0.85rem; font-size:1rem;">
+        Accéder au Dashboard →
+      </button>
+    </form>
+
+    <!-- FORMULAIRE SERVEUR (Code PIN 4 chiffres) -->
+    <form id="form-serveur" style="display:none;" onsubmit="event.preventDefault(); window.location.href='scanner-caisse.html';">
+      <div style="margin-bottom:1.5rem; text-align:center;">
+        <label style="display:block; font-weight:700; font-size:0.85rem; margin-bottom:0.75rem; color:#334155;">Entrez votre Code PIN Caisse (4 chiffres) :</label>
+        <div style="display:flex; justify-content:center; gap:0.75rem;">
+          <input type="password" maxlength="1" value="1" style="width:45px; height:50px; text-align:center; font-size:1.5rem; font-weight:800; border:2px solid var(--primary); border-radius:8px;">
+          <input type="password" maxlength="1" value="4" style="width:45px; height:50px; text-align:center; font-size:1.5rem; font-weight:800; border:2px solid var(--primary); border-radius:8px;">
+          <input type="password" maxlength="1" value="2" style="width:45px; height:50px; text-align:center; font-size:1.5rem; font-weight:800; border:2px solid var(--primary); border-radius:8px;">
+          <input type="password" maxlength="1" value="8" style="width:45px; height:50px; text-align:center; font-size:1.5rem; font-weight:800; border:2px solid var(--primary); border-radius:8px;">
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-secondary" style="width:100%; padding:0.85rem; font-size:1rem;">
+        Ouvrir le Scanner Caisse →
+      </button>
+    </form>
+
+    <!-- Coordonnées & Support en cas de problème -->
+    <div style="margin-top:2rem; padding-top:1.5rem; border-top:1px solid #e2e8f0; text-align:center; font-size:0.8rem; color:#64748b;">
+      Assistance technique Algérie : <strong>0541 53 47 62</strong><br>
+      Email : <strong>kazimehdi34@gmail.com</strong>
+    </div>
+
+  </div>
+
+  <script>
+    function switchTab(role) {
+      if (role === 'gerant') {
+        document.getElementById('form-gerant').style.display = 'block';
+        document.getElementById('form-serveur').style.display = 'none';
+        document.getElementById('tab-gerant').style.background = '#ffffff';
+        document.getElementById('tab-gerant').style.color = '#0f172a';
+        document.getElementById('tab-serveur').style.background = 'transparent';
+        document.getElementById('tab-serveur').style.color = '#64748b';
+      } else {
+        document.getElementById('form-gerant').style.display = 'none';
+        document.getElementById('form-serveur').style.display = 'block';
+        document.getElementById('tab-serveur').style.background = '#ffffff';
+        document.getElementById('tab-serveur').style.color = '#0f172a';
+        document.getElementById('tab-gerant').style.background = 'transparent';
+        document.getElementById('tab-gerant').style.color = '#64748b';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fidelix Algérie · Carte de Fidélité Digitale sur Apple Wallet & Google Wallet</title>
+  <meta name="description" content="Plateforme de fidélisation client dématérialisée en Algérie. 0 application à installer, 100% compatible Apple Wallet et Google Wallet. Paiement BaridiMob & CIB.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER OFFICIEL ==================== -->
+  <header class="header">
+    <div class="brand-container">
+      <a href="index.html" style="display:flex; align-items:center; gap:0.75rem;">
+        <div class="brand-logo-badge">F</div>
+        <div class="brand-title">fidelix<span style="color:var(--primary);">.dz</span></div>
+      </a>
+      <span class="brand-flag">🇩🇿 Algérie</span>
+    </div>
+    <nav class="nav-menu">
+      <a href="#solution" class="nav-link">Solution</a>
+      <a href="#simulateur" class="nav-link">Simulateur ROI (DA)</a>
+      <a href="#tarifs" class="nav-link">Tarifs BaridiMob</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="pass-client.html" class="nav-link">Démo Pass Client</a>
+      <a href="scanner-caisse.html" class="nav-link">Scanner Serveur</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="connexion.html" class="btn btn-outline">Connexion Pro</a>
+      <a href="dashboard-gerant.html" class="btn btn-primary">Espace Gérant</a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero">
+    <div class="hero-pill">✦ La fidélité nouvelle génération pour commerces algériens</div>
+    <h1 class="hero-title">Vos clients reviennent.<br><span>Mesuré en Dinars Algériens.</span></h1>
+    <p class="hero-subtitle">Fidelix installe votre programme de fidélité directement dans <strong>Apple Wallet</strong> et <strong>Google Wallet</strong>. Zéro application à télécharger sur Play Store, zéro friction en caisse.</p>
+    <div class="hero-cta-group">
+      <a href="#tarifs" class="btn btn-primary" style="font-size:1.1rem; padding:0.85rem 1.75rem;">Démarrer 30 jours offerts →</a>
+      <a href="pass-client.html" class="btn btn-outline" style="font-size:1.1rem; padding:0.85rem 1.75rem;">Tester le Pass Client</a>
+    </div>
+    
+    <div style="display:flex; justify-content:center; gap:3rem; margin-top:3rem; flex-wrap:wrap; font-size:0.95rem; font-weight:600; color:var(--gray-600);">
+      <div>✓ <strong>0 app</strong> à installer par le client</div>
+      <div>✓ <strong>Apple & Google</strong> Wallet natifs</div>
+      <div>✓ <strong>BaridiMob & CIB</strong> acceptés</div>
+      <div>✓ <strong>Conforme Loi 18-07</strong> (Données DZ)</div>
+    </div>
+  </section>
+
+  <!-- ==================== CALCULATEUR DE ROI DYNAMIQUE ==================== -->
+  <section class="container" id="simulateur">
+    <div class="calc-container">
+      <div style="text-align:center; margin-bottom:2rem;">
+        <span class="hero-pill">Simulateur de Rentabilité Local</span>
+        <h2 style="font-size:2.25rem; font-weight:800; color:var(--gray-900);">Calculez vos gains nets mensuels en Dinars</h2>
+        <p style="color:var(--gray-600);">Estimez le chiffre d'affaires supplémentaire généré grâce aux revisites stimulées par notifications Wallet à 0 DA de frais SMS.</p>
+      </div>
+
+      <div class="grid-2" style="align-items:center;">
+        <div>
+          <!-- Curseur Clients -->
+          <div class="calc-range-wrapper">
+            <div class="calc-label">
+              <span>Clients servis par jour :</span>
+              <span id="label-clients" style="color:var(--primary); font-size:1.25rem;">120 clients/j</span>
+            </div>
+            <input type="range" min="30" max="500" value="120" step="10" class="calc-slider" id="input-clients" oninput="updateROI()">
+          </div>
+
+          <!-- Curseur Panier Moyen -->
+          <div class="calc-range-wrapper">
+            <div class="calc-label">
+              <span>Panier moyen par commande :</span>
+              <span id="label-panier" style="color:var(--primary); font-size:1.25rem;">650 DA</span>
+            </div>
+            <input type="range" min="150" max="3000" value="650" step="50" class="calc-slider" id="input-panier" oninput="updateROI()">
+          </div>
+
+          <!-- Curseur Hausse Visites -->
+          <div class="calc-range-wrapper">
+            <div class="calc-label">
+              <span>Augmentation estimée des retours :</span>
+              <span id="label-taux" style="color:var(--primary); font-size:1.25rem;">+20% de revisites</span>
+            </div>
+            <input type="range" min="10" max="35" value="20" step="5" class="calc-slider" id="input-taux" oninput="updateROI()">
+          </div>
+        </div>
+
+        <div>
+          <div class="calc-result-box">
+            <div style="font-size:0.95rem; text-transform:uppercase; letter-spacing:1px; opacity:0.9;">Gain additionnel estimé :</div>
+            <div class="calc-result-amount" id="result-gain">+156 000 DA</div>
+            <div style="font-size:1rem; opacity:0.85; margin-bottom:1rem;">de chiffre d'affaires brut par mois</div>
+            <div style="background:rgba(255,255,255,0.15); padding:0.75rem; border-radius:var(--radius-sm); font-size:0.85rem;">
+              ⚡ Votre abonnement Starter+ (3 900 DA) est <strong>amorti dès le 2ème jour du mois</strong> !
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COMPARAISON MARCHÉ DZ ==================== -->
+  <section class="container" id="solution">
+    <div style="text-align:center; margin-bottom:3rem;">
+      <h2 style="font-size:2.25rem; font-weight:800; color:var(--gray-900);">Pourquoi Fidelix remplace les cartons et les SMS en Algérie</h2>
+      <p style="color:var(--gray-600); max-width:700px; margin:0 auto;">Comparez les 3 méthodes utilisées par les restaurants, cafés et boutiques à Alger, Oran et Constantine.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card" style="border-top:4px solid var(--danger);">
+        <div class="card-icon" style="background:#fee2e2; color:var(--danger);">✕</div>
+        <h3 style="font-size:1.25rem; font-weight:700; margin-bottom:0.75rem;">Carte en Carton</h3>
+        <p style="color:var(--gray-600); font-size:0.95rem;">• Perdue ou oubliée dans <strong>72% des cas</strong>.<br>• Coût d'impression régulier (15-25 DA l'unité).<br>• Aucune donnée client enregistrée.<br>• Impossible de recontacter les clients dormants.</p>
+      </div>
+
+      <div class="card" style="border-top:4px solid var(--warning);">
+        <div class="card-icon" style="background:#fef3c7; color:var(--warning);">!</div>
+        <h3 style="font-size:1.25rem; font-weight:700; margin-bottom:0.75rem;">Campagnes SMS Pro</h3>
+        <p style="color:var(--gray-600); font-size:0.95rem;">• Coûteux : <strong>3.5 à 5 DA par SMS</strong> envoyé.<br>• Facture de 5 000 DA à chaque annonce.<br>• Zéro design, lien souvent bloqué.<br>• Faible mémorisation de votre marque.</p>
+      </div>
+
+      <div class="card" style="border-top:4px solid var(--success); box-shadow:0 8px 24px rgba(16,185,129,0.15);">
+        <div class="card-icon" style="background:#d1fae5; color:var(--success);">✓</div>
+        <h3 style="font-size:1.25rem; font-weight:700; margin-bottom:0.75rem;">Fidelix Pass Wallet</h3>
+        <p style="color:var(--gray-600); font-size:0.95rem;">• <strong>0 DA de frais</strong> sur les notifications push.<br>• Affichage natif sur l'écran verrouillé.<br>• Fiche client complète (Nom, mobile DZ, visites).<br>• Géolocalisation automatique à 150 mètres.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TARIFS & BARIDIMOB ==================== -->
+  <section class="container" id="tarifs">
+    <div style="max-width:850px; margin:0 auto; background:var(--white); border:2px solid var(--primary); border-radius:var(--radius-lg); padding:3rem; box-shadow:var(--shadow-xl);">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
+        <div>
+          <span class="hero-pill">Offre Starter+ Algérie</span>
+          <h2 style="font-size:2.25rem; font-weight:800; color:var(--gray-900);">3 900 DA <span style="font-size:1.1rem; color:var(--gray-500); font-weight:500;">/ mois TTC</span></h2>
+          <div style="color:var(--success); font-weight:700; font-size:0.9rem;">Ou 32 500 DA / an (Économisez 30%)</div>
+        </div>
+        <div style="text-align:right;">
+          <a href="https://wa.me/213541534762?text=Bonjour,%20je%20souhaite%20activer%20Fidelix%20pour%20mon%20commerce" target="_blank" class="btn btn-primary" style="font-size:1.1rem; padding:0.9rem 1.8rem;">Activer via BaridiMob →</a>
+        </div>
+      </div>
+
+      <div class="grid-2" style="border-top:1px solid var(--gray-200); padding-top:2rem;">
+        <div>
+          <h4 style="font-weight:700; margin-bottom:1rem;">Tout inclus dans l'abonnement :</h4>
+          <ul style="list-style:none; line-height:2; color:var(--gray-700); font-size:0.95rem;">
+            <li>✓ <strong>30 jours d'essai gratuit</strong> sans engagement</li>
+            <li>✓ Jusqu'à <strong>2 000 clients actifs</strong> enregistrés</li>
+            <li>✓ Notifications push gratuites en illimité</li>
+            <li>✓ Kit Chevalet QR comptoir A5 prêt à imprimer</li>
+            <li>✓ Application scanner caisse pour vos serveurs</li>
+            <li>✓ Support WhatsApp 7j/7 en Algérie</li>
+          </ul>
+        </div>
+        <div style="background:var(--gray-50); border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:1.5rem;">
+          <h4 style="font-weight:700; color:var(--gray-900); margin-bottom:0.75rem;">Coordonnées officielles BaridiMob :</h4>
+          <div style="font-size:0.85rem; color:var(--gray-600); margin-bottom:0.5rem;">RIP Algérie Poste (20 chiffres) :</div>
+          <div style="background:var(--white); border:1px dashed var(--gray-400); padding:0.6rem; font-family:monospace; font-weight:700; color:var(--gray-900); margin-bottom:0.75rem;">
+            00799999004172668994
+          </div>
+          <div style="font-size:0.85rem; color:var(--gray-600);">
+            Numéro Support : <strong>0541 53 47 62</strong><br>
+            Email de facturation : <strong>kazimehdi34@gmail.com</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ACCORDÉON ==================== -->
+  <section class="container" id="faq">
+    <div style="text-align:center; margin-bottom:3rem;">
+      <h2 style="font-size:2.25rem; font-weight:800;">Questions Fréquentes (FAQ DZ)</h2>
+      <p style="color:var(--gray-600);">Tout ce que les commerçants algériens nous demandent avant de démarrer.</p>
+    </div>
+
+    <div style="max-width:800px; margin:0 auto; display:flex; flex-direction:column; gap:1rem;">
+      <div class="card" style="padding:1.25rem; cursor:pointer;" onclick="toggleFAQ(this)">
+        <div style="display:flex; justify-content:space-between; align-items:center; font-weight:700;">
+          <span>Mes clients doivent-ils télécharger une application sur le Play Store ?</span>
+          <span style="font-size:1.25rem;">+</span>
+        </div>
+        <div style="display:none; margin-top:0.75rem; color:var(--gray-600); font-size:0.95rem; border-top:1px solid var(--gray-100); padding-top:0.75rem;">
+          Non, absolument pas ! La carte s'ajoute en 1 clic dans Apple Wallet (iPhone) ou Google Wallet (Android) via le scan d'un QR code au comptoir. Zéro mémoire saturée, zéro mot de passe.
+        </div>
+      </div>
+
+      <div class="card" style="padding:1.25rem; cursor:pointer;" onclick="toggleFAQ(this)">
+        <div style="display:flex; justify-content:space-between; align-items:center; font-weight:700;">
+          <span>Quel matériel est nécessaire en caisse pour tamponner les cartes ?</span>
+          <span style="font-size:1.25rem;">+</span>
+        </div>
+        <div style="display:none; margin-top:0.75rem; color:var(--gray-600); font-size:0.95rem; border-top:1px solid var(--gray-100); padding-top:0.75rem;">
+          N'importe quel smartphone ou tablette déjà utilisé par vos serveurs. Ouvrez simplement la page scanner Fidelix et flashez le QR code du client en moins de 2 secondes.
+        </div>
+      </div>
+
+      <div class="card" style="padding:1.25rem; cursor:pointer;" onclick="toggleFAQ(this)">
+        <div style="display:flex; justify-content:space-between; align-items:center; font-weight:700;">
+          <span>Comment régler mon abonnement par BaridiMob ?</span>
+          <span style="font-size:1.25rem;">+</span>
+        </div>
+        <div style="display:none; margin-top:0.75rem; color:var(--gray-600); font-size:0.95rem; border-top:1px solid var(--gray-100); padding-top:0.75rem;">
+          Effectuez votre virement de 3 900 DA vers le RIP <code>00799999004172668994</code> et envoyez la capture du reçu par WhatsApp au <strong>0541 53 47 62</strong>. Votre espace est activé en 5 minutes avec reçu fiscal certifié.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem;">
+          <div class="brand-logo-badge" style="width:32px; height:32px; font-size:1rem;">F</div>
+          <div style="color:var(--white); font-weight:800; font-size:1.2rem;">fidelix.dz</div>
+        </div>
+        <p style="font-size:0.9rem; line-height:1.7;">La solution de fidélisation dématérialisée leader en Algérie pour cafés, restaurants, salons et boutiques de quartier.</p>
+      </div>
+      <div>
+        <h4 style="color:var(--white); font-weight:700; margin-bottom:1rem;">Pages Démo</h4>
+        <div style="display:flex; flex-direction:column; gap:0.5rem; font-size:0.9rem;">
+          <a href="pass-client.html">Pass Client (Wallet)</a>
+          <a href="scanner-caisse.html">Scanner Caisse Serveur</a>
+          <a href="dashboard-gerant.html">Dashboard Espace Pro</a>
+          <a href="connexion.html">Authentification</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="color:var(--white); font-weight:700; margin-bottom:1rem;">Contact Direct</h4>
+        <div style="display:flex; flex-direction:column; gap:0.5rem; font-size:0.9rem;">
+          <div>📞 0541 53 47 62</div>
+          <div>💬 WhatsApp Direct</div>
+          <div>✉️ kazimehdi34@gmail.com</div>
+          <div>📍 Alger, Algérie</div>
+        </div>
+      </div>
+      <div>
+        <h4 style="color:var(--white); font-weight:700; margin-bottom:1rem;">Légal</h4>
+        <div style="display:flex; flex-direction:column; gap:0.5rem; font-size:0.9rem;">
+          <a href="#">Conformité Loi 18-07</a>
+          <a href="#">Conditions Générales</a>
+          <a href="#">Mentions Fiscales (NIF)</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2025 Fidelix Algérie. Tous droits réservés. Hébergé sur Edge Vercel & Supabase Cloud.</div>
+      <div>Numéro RIP : 00799999004172668994</div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPT INTERACTIF CALCULATEUR ==================== -->
+  <script>
+    function updateROI() {
+      const clients = parseInt(document.getElementById('input-clients').value);
+      const panier = parseInt(document.getElementById('input-panier').value);
+      const taux = parseInt(document.getElementById('input-taux').value) / 100;
+
+      document.getElementById('label-clients').innerText = clients + " clients/j";
+      document.getElementById('label-panier').innerText = panier + " DA";
+      document.getElementById('label-taux').innerText = "+" + (taux * 100) + "% de revisites";
+
+      // Formule: clients/jour * 30 jours * panier * taux revisite * marge brute estimée (50%)
+      const gainBrut = Math.round(clients * 30 * panier * taux * 0.5);
+      document.getElementById('result-gain').innerText = "+" + gainBrut.toLocaleString('fr-FR') + " DA";
+    }
+
+    function toggleFAQ(element) {
+      const content = element.children[1];
+      const icon = element.children[0].children[1];
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        icon.innerText = "+";
+      } else {
+        content.style.display = "block";
+        icon.innerText = "−";
+      }
+    }
+  </script>
+</body>
+</html>

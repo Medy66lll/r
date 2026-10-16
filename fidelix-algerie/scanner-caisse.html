@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scanner Caisse Serveur · Café El Hamma · Fidelix Algérie</title>
+  <meta name="description" content="Interface de caisse rapide et scanner QR pour serveurs et commerçants. Validation en 0.4s avec protection anti-fraude.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background:#090d16; color:#f8fafc; min-height:100vh; display:flex; flex-direction:column;">
+
+  <!-- Header de Caisse -->
+  <header style="background:#131b2e; padding:0.75rem 1.5rem; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #1e293b;">
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <a href="index.html" style="color:var(--primary); font-weight:800; font-size:1.1rem;">fidelix<span style="color:#fff;">.pos</span></a>
+      <span style="background:var(--secondary); color:#a7f3d0; font-size:0.75rem; padding:2px 8px; border-radius:99px; font-weight:700;">🟢 Caisse #01 Active</span>
+    </div>
+    <div style="display:flex; align-items:center; gap:1rem; font-size:0.85rem;">
+      <span style="color:#94a3b8;">Serveur : <strong style="color:#fff;">Mehdi Touati (#1428)</strong></span>
+      <a href="connexion.html" class="btn btn-outline" style="padding:0.3rem 0.75rem; font-size:0.75rem; border-color:#334155; color:#cbd5e1;">Changer PIN</a>
+    </div>
+  </header>
+
+  <!-- Zone Principale : Viseur Caméra & Fiche Rapide -->
+  <main style="flex:1; max-width:500px; margin:0 auto; width:100%; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
+    
+    <!-- VISEUR DU SCANNER QR CAMÉRA -->
+    <div style="position:relative; background:#1e293b; border-radius:24px; padding:1.5rem; text-align:center; border:2px dashed #475569; overflow:hidden;">
+      <div style="font-size:0.85rem; font-weight:700; color:#94a3b8; margin-bottom:1rem;">CAMERA AUTO-FOCUS · SCAN DU PASS CLIENT</div>
+      
+      <!-- Cadre de visée animé -->
+      <div style="position:relative; width:220px; height:220px; margin:0 auto; border:2px solid var(--primary); border-radius:16px; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.4);">
+        <!-- Ligne laser de scan -->
+        <div style="position:absolute; top:50%; left:5%; right:5%; height:2px; background:var(--primary); box-shadow:0 0 12px var(--primary);"></div>
+        <div style="font-size:3rem; opacity:0.3;">📷</div>
+      </div>
+
+      <div style="margin-top:1rem; font-size:0.8rem; color:#64748b;">
+        Placez le QR Code de l'Apple/Google Wallet du client face à l'objectif
+      </div>
+
+      <!-- Bouton Simulation Scan Démo -->
+      <button onclick="triggerScanSuccess()" class="btn btn-primary" style="margin-top:1rem; width:100%; padding:0.75rem; font-size:0.95rem;">
+        ⚡ Simuler un Scan Réussi (Client: Amine Benali)
+      </button>
+    </div>
+
+    <!-- FICHE RÉSULTAT CLIENT (S'affiche après détection du scan) -->
+    <div id="scan-result-card" style="display:none; background:#1e293b; border:2px solid var(--success); border-radius:20px; padding:1.5rem; margin-top:1.5rem; animation:fadeIn 0.3s ease;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+        <div>
+          <span style="background:#065f46; color:#a7f3d0; font-size:0.75rem; font-weight:700; padding:2px 8px; border-radius:99px;">PASS CLIENT DÉTECTÉ (0.4s)</span>
+          <h3 style="font-size:1.35rem; font-weight:800; color:#fff; margin-top:0.25rem;">Amine Benali</h3>
+          <div style="font-size:0.85rem; color:#94a3b8;">Mobile : 0550 12 34 56 · Total visites : 24</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:1.5rem; font-weight:800; color:#fde047;" id="current-stamps-display">9 / 10</div>
+          <div style="font-size:0.75rem; color:#94a3b8;">Tampons</div>
+        </div>
+      </div>
+
+      <!-- Actions de Caisse -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; margin-top:1rem;">
+        <button onclick="addStampAction()" class="btn btn-primary" style="padding:0.85rem; font-size:0.95rem;">
+          +1 Tampon Café
+        </button>
+        <button onclick="claimRewardAction()" class="btn" style="background:#f59e0b; color:#fff; padding:0.85rem; font-size:0.95rem;">
+          🎁 Débloquer Cadeau
+        </button>
+      </div>
+
+      <!-- Indicateur anti-fraude -->
+      <div style="margin-top:0.75rem; font-size:0.75rem; color:#64748b; text-align:center;">
+        🔒 Sécurité anti-fraude activée · Délai mini entre scans : 30 min
+      </div>
+    </div>
+
+    <!-- Message de confirmation Toast -->
+    <div id="toast-success" style="display:none; background:#065f46; color:#fff; padding:1rem; border-radius:12px; margin-top:1rem; text-align:center; font-weight:700;">
+      ✓ Tampon attribué ! Push instantané envoyé à l'iPhone d'Amine (< 1.5s).
+    </div>
+
+  </main>
+
+  <footer style="text-align:center; padding:1rem; font-size:0.75rem; color:#475569; border-top:1px solid #1e293b;">
+    Fidelix POS Engine · Conçu pour les commerces en Algérie · Support direct : 0541 53 47 62
+  </footer>
+
+  <script>
+    function triggerScanSuccess() {
+      document.getElementById('scan-result-card').style.display = 'block';
+      document.getElementById('toast-success').style.display = 'none';
+    }
+
+    function addStampAction() {
+      document.getElementById('current-stamps-display').innerText = "10 / 10";
+      document.getElementById('toast-success').style.display = 'block';
+      document.getElementById('toast-success').innerText = "🎉 10ÈME TAMPON ATTEINT ! Le client gagne son café offert !";
+      document.getElementById('toast-success').style.background = "#d97706";
+    }
+
+    function claimRewardAction() {
+      alert("🎁 Cadeau '1 Boisson chaude au choix' validé en caisse ! Le pass du client est réinitialisé à 0/10 pour son prochain cycle.");
+      document.getElementById('current-stamps-display').innerText = "0 / 10";
+      document.getElementById('toast-success').style.display = 'block';
+      document.getElementById('toast-success').innerText = "✓ Cycle réinitialisé avec succès.";
+      document.getElementById('toast-success').style.background = "#065f46";
+    }
+  </script>
+</body>
+</html>
